@@ -1,7 +1,9 @@
+import { GreetTypes } from "./greet.types"
 
-const Greet = ({name}: {name?: string}) => {
+
+const Greet = ({name}: GreetTypes) => {
   return (
-    <div>greet {name}</div>
+    <div>{name ? `greet ${name}` : 'Guest'}</div>
   )
 }
 
